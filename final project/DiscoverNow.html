@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jungle Safari</title>
+<link rel="icon" sizes="1x1" type="image/x-icon" href="images/favicon.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+<!--Nav bar -->
+<ul class="nav">
+  <li><a class="active" href="Home.html" onmousedown="bleep.play()">Home</a></li>
+  <li><a href="overview1.html" onmousedown="bleep.play()">Overview</a></li>
+  <li><a href="Booking.html" onmousedown="bleep.play()">Booking</a></li>
+  <li><a href="#about" onmousedown="bleep.play()">Time To visit</a></li>
+  <div class="navbar" onmousedown="bleep.play()">
+  <div style="float:right;"class="dropdown">
+    <button class="dropbtn">Dropdown 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div  class="dropdown-content">
+      <a href="Login.html" onmousedown="bleep.play()">Login</a>
+      <a href="Sing Up.html" onmousedown="bleep.play()">Sing Up</a>
+      <a href="contact.html" onmousedown="bleep.play()">Contact</a>
+    </div>
+  </div> 
+  <li style="float:right;"><a href="#about" onmousedown="bleep.play()">Travel Tips</a></li>
+</div>
+</ul>
+<script>
+var bleep = new Audio()
+bleep.src ="images/beep.mp3";
+</script>
+</body>
+</html>

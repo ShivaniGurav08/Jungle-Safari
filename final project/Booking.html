@@ -1,0 +1,318 @@
+<!doctype html>
+<html>
+<head>
+<title>Jungle Safari</title>
+<link rel="icon" sizes="1x1" type="image/x-icon" href="images/favicon.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="Bookingcss.css"/>
+</head>
+<body>
+
+<!--Nav bar -->
+<ul class="nav">
+  <li><a class="active" href="Home.html" onmousedown="bleep.play()">Home</a></li>
+  <li><a href="overview1.html" onmousedown="bleep.play()">Overview</a></li>
+  <li><a href="Booking.html" onmousedown="bleep.play()">Booking</a></li>
+  <li><a href="time to visit.html" onmousedown="bleep.play()">Time To visit</a></li>
+  <div class="navbar" onmousedown="bleep.play()">
+  <div style="float:right;"class="dropdown">
+    <button class="dropbtn">Join us Now
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div  class="dropdown-content">
+      <a href="Login.html" onmousedown="bleep.play()">Login</a>
+      <a href="Sing Up.html" onmousedown="bleep.play()">Sing Up</a>
+      <a href="contact.html" onmousedown="bleep.play()">Contact</a>
+    </div>
+  </div> 
+  <li style="float:right;"><a href="TRAVELTIPS1.html" onmousedown="bleep.play()">Travel Tips</a></li>
+</div>
+</ul>
+<script>
+var bleep = new Audio()
+bleep.src ="images/beep.mp3";
+</script>
+
+
+<!--use fo animation 
+
+<link id="all"href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+<div id="body1" class="btn">
+  <div class="bg"></div>
+  <span class="noselect">Close the blinds</span>
+  <div class="string"></div>
+  <div class="string-end"></div>
+  <div class="blind" id="b1"></div>
+  <div class="blind" id="b2"></div>
+  <div class="blind" id="b3"></div>
+  <div class="blind" id="b4"></div>
+  <div class="blind" id="b5"></div>
+  <div class="blind" id="b6"></div>
+  <div class="blind" id="b7"></div>
+  <div class="blind" id="b8"></div>
+  <div class="blind" id="b9"></div>
+  <div class="blind" id="b10"></div>
+  <div class="blind" id="b11"></div>
+  <div class="blind" id="b12"></div>
+  <div class="blind" id="b13"></div>
+  <div class="blind" id="b14"></div>
+  <div class="blind" id="b15"></div>
+  <div class="blind" id="b16"></div>
+</div>
+
+<!--Booking code-->
+<video id="background-video" autoplay loop muted poster="images/logo.jpg">
+  <source src="images/forest_Trim.mp4" type="video/mp4">
+</video>
+
+
+
+<!---->
+<form id="body" action="reservation.php" method="post">
+  <div class="elem-group">
+    <label for="name">Your Name</label>
+    <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
+  </div>
+  <div class="elem-group">
+    <label for="email">Your E-mail</label>
+    <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+  </div>
+  <div class="elem-group">
+    <label for="phone">Your Phone</label>
+    <input type="tel" id="phone" name="visitor_phone" placeholder="498-348-3872" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+  </div>
+  <hr>
+  <div class="elem-group inlined">
+    <label for="adult">Adults</label>
+    <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+  </div>
+  <div class="elem-group inlined">
+    <label for="child">Children</label>
+    <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
+  </div>
+  <div class="elem-group inlined">
+    <label for="checkin-date">Check-in Date</label>
+    <input type="date" id="checkin-date" name="checkin" required>
+  </div>
+  <div class="elem-group inlined">
+    <label for="checkout-date">Check-out Date</label>
+    <input type="date" id="checkout-date" name="checkout" required>
+  </div>
+  <div class="elem-group">
+    <label for="room-selection">Select Room Preference</label>
+    <select id="room-selection" name="room_preference" required>
+        <option value="">Choose a Room from the List</option>
+        <option value="connecting">Connecting</option>
+        <option value="adjoining">Adjoining</option>
+        <option value="adjacent">Adjacent</option>
+    </select>
+  </div>
+  <hr>
+  <div class="elem-group">
+    <label for="message">Anything Else?</label>
+    <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important." required></textarea>
+  </div>
+  <button type="submit">Book The Rooms</button>
+</form>
+
+<!--this code a gallary-->
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>Jungle Safri</h1>
+<hr>
+
+<h2 style="color:white;">PORTFOLIO</h2>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('nature')"> Nature</button>
+  <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+  <button class="btn" onclick="filterSelection('people')"> People</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column nature">
+    <div class="content">
+      <img src="images/jeep-safari.jpg" alt="Mountains" style="width:100%">
+      <h4>Jeep </h4>
+      <p>* ₹1600/ Person for Indian<br>
+* ₹3000/ Person for Foreigner<br>
+* Max. 16 People Allowed in One Canter<br>
+* Zones: Dhikala.<br>
+* Timings: 06:00 AM to 12:00 PM & 12:00 PM to 6:00 PM</p>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+    <img src="images/night-safri.jpg" alt="Lights" style="width:100%">
+      <h4>Night Safri</h4>
+      <p>* ₹1600/ Person for Indian<br>
+* ₹3000/ Person for Foreigner<br>
+* Max. 16 People Allowed in One Canter<br>
+* Zones: Dhikala.<br>
+* Timings: 06:00 AM to 12:00 PM & 12:00 PM to 6:00 PM</p>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+    <img src="images/mountain-safri.jpg" alt="Nature" style="width:100%">
+      <h4>Mountain Safri</h4>
+      <p>DURATION
+2 ½ Hours
+
+DEPARTS
+09:30 & 13:30 daily
+(ask for seasonal variations)
+
+COST
+Adult £47.50
+Concession 65 yrs + £42.75
+Young Person 13-17 yrs £37.50 Child 0-12 yrs £27.50
+Family 2 adults + 2 children £140.00</p>
+    </div>
+  </div>
+  
+  <div class="column cars">
+    <div class="content">
+      <img src="images/jeep-safari.jpg" alt="Car" style="width:100%">
+      <h4>JEEP SAFARI</h4>
+      <p>* ₹4500/Jeep for indian<br>
+      * ₹7000/jeep for Foreigner<br>
+      * Max. 6 People Allowed in One Jeep<br>
+      * Timings: 06:00 am to 10:00 am & 01:00 pm to 5:00 pm<br>
+      * Tarrif Included: Gypsy (Jeep) Charges, Road Tax, Entry Fee.<br>
+</p>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+    <img src="images/elephant-safari.jpg" alt="Car" style="width:100%">
+      <h4>ELEPHANT SAFARI</h4>
+      <p>* ₹3500/ Elephant<br>
+* Max. 4 Adult and 2 Children Allowed on One Elephant<br>
+* Zones: Bijrani, Dhikala & Sitabani.<br>
+* Timings: Morning & Evening<br>
+* Tarrif Included: Elephant Charges, Entry Fee.</p>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+    <img src="images/canter-safari.jpg" alt="Car" style="width:100%">
+      <h4>CANTER SAFARI</h4>
+      <p>* ₹1600/ Person for Indian<br>
+* ₹3000/ Person for Foreigner<br>
+* Max. 16 People Allowed in One Canter<br>
+* Zones: Dhikala.<br>
+* Timings: 06:00 AM to 12:00 PM & 12:00 PM to 6:00 PM</p>
+    </div>
+  </div>
+
+  <div class="column people">
+    <div class="content">
+      <img src="images/bike-safri.jpg" alt="Car" style="width:100%">
+      <h4>Mountian Bike</h4>
+      <p>* ₹2,249.05<br>
+Lowest Price Guarantee<br>Confirmation will be received at time of booking<br> Not recommended for pregnant travelers Not recommended for travelers with back problems Minimum age is 14 years Not wheelchair accessible Travelers should have a moderate physical fitness level This tour/activity will have a maximum of 15 travelers
+ </p>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    <img src="images/boat-safri.jpg" alt="Car" style="width:100%">
+      <h4>Rafting</h4>
+      <p>*  ₹1,855.23<br>
+Lowest Price Guarantee <br>Confirmation will be received at time of booking Pick-up available from all hotels in Alanya center,<br> Cleopatra area, Mahmutlar, Kestel, Tosmur, Oba, Ulas, Konakli, Turkler, Avsallar, Okurcalar Wheelchair accessible Stroller accessible Near public transportation Infants must sit on laps Transportation is wheelchair accessible Surfaces are wheelchair accessible Most travelers can participate This tour/activity will have a maximum of 65 travelers Operated by Tourmania
+</p>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    <img src="images/boat2-safri.jpg" alt="Car" style="width:100%">
+      <h4>Boat</h4>
+      <p>*  ₹6,855.23<br>Step aboard an atmospheric pirate boat and join a motley crew of pirates, buccaneers and landlubbers on a memorable seafaring adventure! This 6-hour cruise from Alanya includes a buffet lunch and non-stop entertainment like music, treasure hunts and a foam party, plus plenty of stops for swimming. Keep a watch from deck as you pass landmarks like Alanya Castle, Lover's Cave and Cleopatra Beach, and you might even spot dolphins or sea turtles. Family friendly Popular choice with kids Free drinks included Buffet lunch included Travel by boat and see the sights from the water</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+
+
+
+<!--using java script for bokking -->
+<script>
+var currentDateTime = new Date();
+var year = currentDateTime.getFullYear();
+var month = (currentDateTime.getMonth() + 1);
+var date = (currentDateTime.getDate() + 1);
+
+if(date < 10) {
+  date = '0' + date;
+}
+if(month < 10) {
+  month = '0' + month;
+}
+
+var dateTomorrow = year + "-" + month + "-" + date;
+var checkinElem = document.querySelector("#checkin-date");
+var checkoutElem = document.querySelector("#checkout-date");
+
+checkinElem.setAttribute("min", dateTomorrow);
+
+checkinElem.onchange = function () {
+    checkoutElem.setAttribute("min", this.value);
+}
+</script>
+</body>
+</html>

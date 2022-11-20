@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jungle Safari</title>
+<link rel="icon" sizes="1x1" type="image/x-icon" href="images/favicon.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+<!--Nav bar -->
+<ul class="nav">
+  <li><a class="active" href="Home.html" onmousedown="bleep.play()">Home</a></li>
+  <li><a href="overview1.html" onmousedown="bleep.play()">Overview</a></li>
+  <li><a href="Booking.html" onmousedown="bleep.play()">Booking</a></li>
+  <li><a href="time to visit.html" onmousedown="bleep.play()">Time To visit</a></li>
+  <div class="navbar" onmousedown="bleep.play()">
+  <div style="float:right;"class="dropdown">
+    <button class="dropbtn">Join us Now
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div  class="dropdown-content">
+      <a href="Login.html" onmousedown="bleep.play()">Login</a>
+      <a href="Sing Up.html" onmousedown="bleep.play()">Sing Up</a>
+      <a href="contact.html" onmousedown="bleep.play()">Contact</a>
+    </div>
+  </div> 
+  <li style="float:right;"><a href="TRAVELTIPS1.html" onmousedown="bleep.play()">Travel Tips</a></li>
+</div>
+</ul>
+<script>
+var bleep = new Audio()
+bleep.src ="images/beep.mp3";
+</script>
+
+
+<!-- this div use for use for images -->  
+<div class="cater3-movingBG">
+<div class="flyinTxtCont">
+<div class="flyIn lineOne">The</div>
+<div class="flyIn lineTwo">Jungle</div>
+<div class="flyIn lineThree">Safari</div>
+  <div class="flyIn lineFour">Nature is not a place to visit, it is home</div>
+</div>
+</div>
+<br>
+
+<button  class="button-28" role="button"  onclick="audio.play()" ><a href="https://www.viator.com/en-IN/tours/Manaus/Grand-Adventure-Tour/d4441-7155P3" target="_blank">DISCOVER NOW</a></button>
+	<script type="text/javascript" >
+	const audio = new Audio()
+	audio.src ="images/voice.mp3";
+		
+		<!--This code a link button to another pag -->
+
+	</script>
+
+<audio id="sound1" src="images/voice.mp3" preload="auto"></audio>
+
+
+<!--
+<audio id="sound1" src="images/voice.mp3" preload="auto"></audio>
+  <button onclick="document.getElementById('sound1').play();">Play
+  it</button>-->
+
+
+
+<script type="text/javascript">
+    document.getElementById("myButton").onclick = function () {
+        location.href = "DiscoverNow.html";
+    };
+</script>
+
+
+
+<!-- Footer -->
+
+<footer class="footer-distributed">
+
+			<div class="footer-left">
+          <img src="images/logo.png">
+				<h3>About<span>Jungle Safri</span></h3>
+
+				<p class="footer-links">
+					<a href="Home.html">Home</a>
+					|
+					<a href="overview1.html">Blog</a>
+					|
+					<a href="booking.html">About</a>
+					|
+					<a href="contact.html">Contact</a>
+				</p>
+
+				<p class="footer-company-name">© 2022 Jungle Safri Pvt. Ltd.</p>
+			</div>
+
+			<div class="footer-center">
+				<div>
+					<i class="fa fa-map-marker"></i>
+					  <p><span>309 - Rupa Solitaire,
+						 Bldg. No. A - 1, Sector - 1</span>
+						Mahape, Navi Mumbai - 400710</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+91 99-27782183</p>
+				</div>
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:support@eduonix.com">junglesafari@gmail.com</a></p>
+				</div>
+			</div>
+			<div class="footer-right">
+				<p class="footer-company-about">
+					<span>visit us on</span>
+				</p>
+				<div class="footer-icons">
+					<a href="https://www.facebook.com" target="_blank"><img src=" facebook img.png" alt="try later" width="40"/><i class="fa fa-facebook"></i></a>
+					<a href="https://www.twitter.com" target="_blank"><img src=" twitter img.png" alt="try later" width="40"/><i class="fa fa-twitter"></i></a>
+					<a href="https://www.instagram.com" target="_blank"><img src="instagram1 img.png" alt="try later" width="40"/><i class="fa fa-instagram"></i></a>
+					<a href="https://www.gmail.com" target="_blank"><img src=" gmail img.png" alt="try later" width="40"/><i class="fa fa-linkedin"></i></a>
+					<a href="https://www.youtube.com" target="_blank"><img src=" youtube img.png" alt="try later" width="40"/><i class="fa fa-youtube"></i></a>
+				</div>
+			</div>
+		</footer>
+
+</body>
+</html>
